@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With LOVE(Husband)</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('./assets/IMG_1982.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .mosaic-item {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .mosaic-item:hover {
+            transform: scale(1.1);
+        }
+
+        .mosaic-item img,
+        .mosaic-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .sorry-note {
+            text-align: center;
+            margin-top: 30px;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            color: #333;
+            padding: 20px;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        .sorry-note video {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 20px auto 0;
+        }
+
+        .m {
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .mosaic-item {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="mosaic-item">
+        <img src="./assets/IMG_1437.JPG" alt="Kitten">
+    </div>
+    <div class="mosaic-item">
+        <img src="./assets/IMG_7002.JPG" alt="Puppy">
+    </div>
+    <div class="mosaic-item">
+        <img src="./assets/IMG_7309.JPG" alt="Beard">
+    </div>
+    <!-- Add more mosaic items with your own image URLs -->
+
+    <div class="sorry-note">
+        <p>Dear Wifey❤️,</p>
+        <p>I sincerely apologize for what I did and for being the cause of your sadness🙅‍♂️. I hope these beautiful photographs make you smile.🤞</p>
+        <p>Let's make things better from now on. I value our relationship and cherish the moments we share.😘</p>
+        <p>Love, Moody Husband😌</p>
+    </div>
+
+    <div class="mosaic-item m">
+        <video controls autoplay>
+            <source src="./assets/recorded-962103243063.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
+</html>
